@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #191717;
+  color: #fff;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+header {
+  position: relative;
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.box {
+  background-color: #fff;
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  z-index: 2;
+  top: 60px;
+  right: 20px;
+  display: none;
+  color: black;
+  padding: 20px;
+}
+.box li {
+  list-style: none;
+}
+
+.show {
+  display: block;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin: 50px auto 10px;
+}
+.video {
+  width: 100%;
+  height: 400px;
+  margin: 10px auto 40px;
+  overflow: hidden;
+  position: relative;
+}
+.video h2 {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  top: 30%;
+  left: 0;
+  margin: auto;
+  font-size: 70px;
+  text-shadow: 5px 5px 5px #000;
+}
+.video video {
+  width: 100%;
+  opacity: 0.8;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  max-width: 1300px;
+  margin: auto;
+}
+.left p {
+  margin-top: 20px;
+  max-width: 500px;
+  font-size: 20px;
+}
+.container .right {
+  display: flex;
+  flex-direction: column;
+}
+.right img {
+  width: 400px;
+  margin: 20px;
+}
+.left img {
+  width: 400px;
+}
+.right p {
+  margin-top: 20px;
+  max-width: 500px;
+  font-size: 20px;
+}
+.luisa {
+  background-color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+.luisa h2 {
+  font-size: 16px;
+  color: #000;
+  font-weight: 100;
+}
+.container2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  overflow: hidden;
+}
+
+.container2 .right {
+  position: absolute;
+  z-index: 1;
+}
+.container2 img {
+  width: 100%;
+  filter: blur(5px);
+  opacity: 0.8;
+}
+.info {
+  padding: 80px;
+  text-shadow: 3px 3px 3px #000;
+}
+.info h1 {
+  font-size: 40px;
+}
+.category h1 {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 30px;
+  background-color: #fff;
+  color: #191717;
+  padding: 30px 0;
+}
+.cards {
+  display: flex;
+  width: 100%;
+  overflow-x: auto;
+  gap: 20px;
+  margin-top: 40px;
+  padding: 20px;
+  justify-content: flex-start;
+}
+
+.cards::-webkit-scrollbar {
+  width: 5px;
+  height: 15px;
+  background-color: rgb(53, 53, 53);
+}
+
+.cards::-webkit-scrollbar-thumb {
+  background: rgb(98, 98, 98);
+  width: 10px;
+  height: 10px;
+}
+
+.card {
+  border: 1px solid white;
+  border-radius: 10px;
+  min-width: 300px;
+  max-width: 300px;
+  padding: 30px;
+  text-align: center;
+}
+.card img {
+  width: 100%;
+  max-height: 238px;
+}
+.card .thumb {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.card .thumb img {
+  max-width: 70px;
+}
+
+.card h3 {
+  margin: 20px auto 10px;
+  font-size: 25px;
+}
+.card p {
+  line-height: 30px;
+}
+.card .prezzo {
+  font-size: 20px;
+  font-weight: bold;
+}
+button {
+  margin-top: 20px;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  background-color: #fff;
+  color: #191717;
+  cursor: pointer;
+  transition: all 0.35s;
+}
+button:hover {
+  background-color: #191717;
+  color: #fff;
+}
